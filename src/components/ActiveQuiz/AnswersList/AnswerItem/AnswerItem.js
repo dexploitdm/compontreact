@@ -3,9 +3,14 @@ import './AnswerItem.css'
 
 const AnswerItem = props => {
     //console.log(props)
+    const cls = ['AnswerItem']
+    if(props.state) {
+        cls.push([props.state])
+    }
+
     return(
         <li 
-        className="AnswerItem"
+        className={cls.join(' ')}
         onClick = {() => props.onAnswerClick(props.answer.id)}
         >
             { props.answer.text }
