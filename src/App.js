@@ -1,16 +1,15 @@
 import React from 'react';
 import Layout from './hoc/Layout/Layout'
+import Quiz from './containers/Quiz/Quiz'
 
 function App() {
   return (
     <div className="App">
       <Layout>
+        <Quiz />
 
 
-
-        <div style={{width: 400, border: '1px solid red'}}>
-          <h1>Layout work</h1>
-        </div>
+      
 
       </Layout>
     </div>
