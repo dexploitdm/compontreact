@@ -3,7 +3,7 @@ import './Drawer.css'
 import Backdrop from '../../UI/Backdrop/Backdrop'
 
 const links = [
-    1,2,3
+    1, 2, 3
 ]
 
 class Drawer extends Component {
@@ -12,7 +12,7 @@ class Drawer extends Component {
         return links.map((link, index) => {
             return (
                 <li key={index}>
-                    <a>Link {link}</a>
+                    <a>Link { link }</a>
                 </li>
             )
         })
@@ -28,9 +28,7 @@ class Drawer extends Component {
             <React.Fragment>
                 <nav className={cls.join(' ')}>
                     <ul>
-                        <li>
-                            { this.renderLinks() }
-                        </li>
+                        { this.renderLinks() }
                     </ul>
                 </nav>
                 { this.props.isOpen ? <Backdrop onClick={this.props.onClose} /> : null }
